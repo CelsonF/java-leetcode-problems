@@ -5,8 +5,8 @@ import leetcode.twoSum.Solution;
 public class Main {
     public static void main(String[] args) {
         Solution twoSum = new Solution();
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
+        int[] nums = {2, 7, 11, 15, 3, 6, 8, 4, 5};
+        int target = 12;
         int[] result = twoSum.twoSum(nums, target);
         
         if (result[0] != -1) {
