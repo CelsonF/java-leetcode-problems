@@ -3,7 +3,7 @@ package leetcode.twoSum;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Solution {
+public class TwoSumSolution {
     /**
      * Finds two indices in the array such that their values sum to the target.
      *
@@ -38,9 +38,13 @@ public class Solution {
 
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
+            
             if (numToIndex.containsKey(complement)) {
-                return new int[] { numToIndex.get(complement), i };
+                return new int[] { 
+                    numToIndex.get(complement), i 
+                };
             }
+            
             numToIndex.put(nums[i], i);
         }
 
